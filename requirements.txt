@@ -1,0 +1,3 @@
+aiohttp==3.6.2
+pyjwt==1.7.1
+pypandoc  # only for converting README.md
