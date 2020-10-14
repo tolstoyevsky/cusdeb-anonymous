@@ -20,6 +20,7 @@ import uuid
 
 import jwt
 from aiohttp import web
+from cdtz import set_time_zone
 
 from cusdeb_anonymous import config
 
@@ -48,6 +49,8 @@ async def issue_token(_request):
 
 async def main():
     """The main entry point. """
+
+    set_time_zone(config.TIME_ZONE)
 
     app = web.Application(middlewares=[web.normalize_path_middleware()])
     app.add_routes([web.get('/anonymous/', issue_token)])

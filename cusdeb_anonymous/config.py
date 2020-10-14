@@ -24,4 +24,6 @@ SECRET_KEY = os.getenv('SECRET_KEY', 'secret')
 
 PORT = os.getenv('PORT', '8007')
 
+TIME_ZONE = os.getenv('TIME_ZONE', 'Europe/Moscow')
+
 TOKEN_TTL = int(os.getenv('TOKEN_TTL', '20'))
