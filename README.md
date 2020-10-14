@@ -17,13 +17,14 @@ $ source cusdeb-anonymous-env/bin/activate
 
 The microservice can be configured via the following environment variables (called params).
 
-| Param         | Description                                                                                               | Default     |
-|---------------|-----------------------------------------------------------------------------------------------------------|-------------|
-| `ALGO`        | The algorithm used for encoding the JWT tokens.                                                           | `HS256`     |
-| `ISSUE_DELAY` | The delay (in seconds) in issuing the JWT tokens.                                                         | `5`         |
-| `PORT`        | The port the CusDeb Anonymous server listens on.                                                          | `8007`      |
-| `SECRET_KEY`  | The secret key used for encoding the JWT tokens. It's **HIGHLY RECOMMENDED** to change the default value. | `secret`    |
-| `TOKEN_TTL`   | How long (in seconds) the JWT tokens are alive.                                                           | `20`        |
+| Param         | Description                                                                                                                                           | Default        |
+|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|----------------|
+| `ALGO`        | The algorithm used for encoding the JWT tokens.                                                                                                       | `HS256`        |
+| `ISSUE_DELAY` | The delay (in seconds) in issuing the JWT tokens.                                                                                                     | `5`            |
+| `PORT`        | The port the CusDeb Anonymous server listens on.                                                                                                      | `8007`         |
+| `SECRET_KEY`  | The secret key used for encoding the JWT tokens. It's **HIGHLY RECOMMENDED** to change the default value.                                             | `secret`       |
+| `TIME_ZONE`   | A string representing the time zone for this installation. See the [list of time zones](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones).| `Europe/Moscow`|
+| `TOKEN_TTL`   | How long (in seconds) the JWT tokens are alive.                                                                                                       | `20`           |
 
 ## API
 
