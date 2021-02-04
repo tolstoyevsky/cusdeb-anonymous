@@ -2,4 +2,4 @@ aiohttp==3.6.2
 pyjwt==1.7.1
 pypandoc  # only for converting README.md
 
--e git+https://git@github.com/tolstoyevsky/cusdeb-tz.git#egg=cusdeb-tz
+-e git+https://git@github.com/tolstoyevsky/cusdeb-tz.git#egg=cdtz
